@@ -13,6 +13,11 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-
-docu
-
+function moveDodgerLeft() {
+  var leftNumbers = dodger.style.left.replace('px', '');
+  var left = parseInt(leftNumbers, 10);
+  
+  if (left > 0) {
+    dodger.style.left = `${right - 1}px`;
+  }
+}
